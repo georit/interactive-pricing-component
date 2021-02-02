@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Interactive pricing component</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <header>
+        <div class="hero">
+          <p class="main-heading">Simple, traffic-based pricing</p>
+          <p class="sub-heading">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+      </header>
+      <div class="pricing-component">
+        <div class="price-selector">
+          <p class="page-views">100K PAGEVIEWS</p>
+          <label for="price-range"></label>
+          <input
+            type="range"
+            name="price-range"
+            id="price-range"
+            class="price-range"
+          />
+          <p class="cost" id="cost">
+            <span class="price" id="price">$16.00</span> /month
+          </p>
+          <div class="billing" id="billing">
+            <p class="monthly">Monthly Billing</p>
+            <label class="billing-switch" id="billing-switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p class="yearly">
+              Yearly Billing <span class="discount" id="discount">-25%</span>
+            </p>
+          </div>
+        </div>
+        <div class="plan-details">
+          <p class="detail">&check; Unlimited websites</p>
+          <p class="detail">&check; 100% data ownership</p>
+          <p class="detail">&check; Email reports</p>
+          <button class="btn-start-trial" id="btn-start-trial">
+            Start my trial
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ******scripts****** -->
+    <script src="./dist/js/script.js"></script>
+  </body>
 </html>
